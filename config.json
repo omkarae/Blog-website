@@ -1,0 +1,26 @@
+{
+    "params": 
+    {
+        "blog_name":"GoAround",
+        "tagline":"A Blog for wonderers",
+        "local_server":"True",
+        "local_server_port":"5001",
+        "local_uri":"mysql://root:@localhost/goaround-blog",
+        "prod_uri":"mysql://root:@localhost/goaround-blog",
+        "fb_url":"https://facebook.com/goaround",
+        "git_url":"https://github.com/goaround",
+        "tw_url":"https://twitter.com/goaround",
+        "gmail-user":"omkaredgaonkar@outlook.com",
+        "gmail-password":"Omkarae@07",
+        "about-text":"Hey there!!! \n This is Omkar who is currently developing this amazing website for you guys. \n If you like this website please share it with your friends and family. \n If you have any suggestions or feedback please feel free to contact me from the contact page. \n Thank you for visiting my website. \n Have a nice day!!!",
+        "no_of_posts":3,
+        "no_of_posts_in_home":6,
+        "admin_user":"Admin",
+        "admin_pass":"Omkarae@07",
+        "upload_location":"C:\\Users\\Omkar\\flask\\static\\assets\\img"
+    }
+
+
+
+
+}

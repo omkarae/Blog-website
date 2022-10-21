@@ -1,0 +1,67 @@
+{% extends "layout.html" %} 
+ 
+{% block body %}
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('  {{ url_for('static',filename='assets/img/home.jpg') }}         ')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>{{params["blog_name"]}}</h1>
+                            <span class="subheading">{{params["tagline"]}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+
+
+                    <!-- Todo: Fetch it using for loop from the SQL database -->
+                    {% for post in posts %}
+                    <!-- <li><a href="/post/{{ post.slug }}">{{post.title}}</a> -->
+                    <!-- Post preview-->
+                    <ul>
+                    <li>
+                    <div class="post-preview">
+                        
+                        <a href="/post/{{ post.slug }}">
+                            <h2 class="post-title">
+                                {{post.title}}
+                            </h2>
+                            <h3 class="post-subtitle">
+                                {{post.tagline}}
+                            </h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="/about">Admin</a>
+                            on {{post.date}}
+                        </p>
+                        <p>
+                            {{post.content[0:43]}}...
+                        </p>
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                </ul></li>
+                    
+                    {% endfor %}
+
+
+                    <!-- Pager-->
+                    <div class="d-flex justify-content-between mb-4">
+                        <a class="btn btn-outline-primary text-uppercase float-start" href="{{prev}}">&larr; Previous </a>
+
+                        <a></a>
+                        <a></a>
+                        <a class="btn btn-outline-primary text-uppercase float-end" href="{{next}}">Next &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock %}
