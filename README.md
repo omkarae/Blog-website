@@ -10,12 +10,13 @@
 - This app uses Jinja templating engine on top of a bootstrap-HTML webpage to show posts.
 - This blog website also includes contact page; in which after data is entried into database admin gets mail notification for the same.
 ## Screenshots
-<p float="left">
+<p align="center">
   <img src="https://github.com/omkarae/Blog-website/blob/master/1.png" alt="UI" height=200px></img>
   <img src="https://github.com/omkarae/Blog-website/blob/master/2.png" alt="Response" height=200px></img>
   <img src="https://github.com/omkarae/Blog-website/blob/master/3.png" alt="Response" height=200px></img>
   <img src="https://github.com/omkarae/Blog-website/blob/master/4.png" alt="Response" height=200px></img>
-  <img src="https://github.com/omkarae/Blog-website/blob/master/5.png" alt="Response" height=200px></img>
+  <img src="https://github.com/omkarae/Blog-website/blob/master/5.jpeg" alt="Response" height=200px></img>
+  <img src="https://github.com/omkarae/Blog-website/blob/master/6.png" alt="Response" height=200px></img>
 </p>
 
 
